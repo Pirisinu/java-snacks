@@ -7,7 +7,7 @@ public class Snack1 {
         System.out.print("Inserisci un numero compreso tra 10 e 20: ");
         byte selectedNum = scanner.nextByte();
 
-        while (selectedNum < 10 || selectedNum > 20){
+        while ((selectedNum < 10 || selectedNum > 20) || selectedNum % 2 != 0){
             System.out.println("Seleziona un altro numero");
             selectedNum = scanner.nextByte();
         };
